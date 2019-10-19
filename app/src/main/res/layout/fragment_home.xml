@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/themecolor"
+        android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbarlayout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@color/brown"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@android:color/transparent"
+                    app:popupTheme="@style/AppTheme.PopupOverlay">
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <ImageView
+                            android:id="@+id/iv_netflix"
+                            android:layout_width="48dp"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/netfilx"
+                            android:layout_marginStart="@dimen/margin_medium"/>
+
+                    <TextView
+                            android:id="@+id/tv_title"
+                            android:textAlignment="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Movies"
+                            android:textColor="@color/whitecolor"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="center_vertical"
+                            android:textSize="@dimen/text_heading_1x"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@id/appbarlayout"
+                android:id="@+id/rv_movies_list_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <!--<TextView-->
+                <!--android:layout_below="@id/rv_movies1"-->
+                <!--android:id="@+id/tv_TVShows"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Critically-acclaimed Western TV Shows"-->
+                <!--android:textColor="@color/whitecolor"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="@dimen/text_regular_3x"/>-->
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+                <!--android:layout_below="@id/tv_TVShows"-->
+                <!--android:id="@+id/rv_tvshows"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/hundred7">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+        <!--<TextView-->
+                <!--android:layout_below="@id/rv_tvshows"-->
+                <!--android:id="@+id/tv_original"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Netflix Originals"-->
+                <!--android:textColor="@color/whitecolor"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="@dimen/text_regular_3x"/>-->
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+                <!--android:layout_below="@id/tv_original"-->
+                <!--android:id="@+id/rv_original"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/hundred7">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+        <!--<TextView-->
+                <!--android:layout_below="@id/rv_original"-->
+                <!--android:id="@+id/tv_toppick"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="Top pick For Thet"-->
+                <!--android:textColor="@color/whitecolor"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textSize="@dimen/text_regular_3x"/>-->
+        <!--<androidx.recyclerview.widget.RecyclerView-->
+                <!--android:layout_below="@id/tv_toppick"-->
+                <!--android:id="@+id/rv_toppick"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/hundred7">-->
+
+        <!--</androidx.recyclerview.widget.RecyclerView>-->
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

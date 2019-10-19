@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyNetflixMovieApplication</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="movies_tv"><![CDATA[Movies & TV]]></string>
+    <string name="search_hint"><![CDATA[Search Movies & TV]]></string>
+    <!--<string name="tv_description">Nikki Glaser bares all in a blistering stand-up special-->
+        <!--about sobriety and getting over her own insecurities. And she won't spare you the details.</string>-->
+</resources>
+
